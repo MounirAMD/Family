@@ -139,5 +139,26 @@
         });
     </script>
 
+
+<script>
+    // Function to filter cards by label
+    function searchByLabel() {
+        const searchInput = document.getElementById("searchInput").value.toLowerCase();
+        const cards = document.querySelectorAll(".card");
+
+        cards.forEach(function (card) {
+            const label = card.querySelector("strong");
+            if (label) {
+                if (label.textContent.toLowerCase().includes(searchInput)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            }
+        });
+    }
+</script>
+
+
 </body>
 </html>
