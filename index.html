@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homme | Page</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&family=Ubuntu:wght@300&display=swap');
+        body{
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+    <style>
         .card{
             width: 95%;
             height: auto;
-            background-color: white;
+            background-color: #EBEDF0;
             border-radius: 20px;
             box-shadow: 0px 0px 10px rgb(143, 140, 140);
             padding-top: 15px;
             margin-top: 20px;
             padding-bottom: 3px;
+            transition: background-color 0.5s;
+        }
+        .card:hover{
+            background-color: #8fff69;
         }
         .img{
             width: 200px;
@@ -25,7 +36,7 @@
         img{
             width: 215px;
             height: auto;
-            border-radius: 15px;
+            border: black solid 1px;
             box-shadow: 0px 0px 10px rgb(143, 140, 140);
         }
         .text{
@@ -37,7 +48,7 @@
         .search-container {
             display: flex;
             align-items: center;
-            background: #ffffff;
+            background: #EBEDF0;
             border: 1px solid #ccc;
             border-radius: 8px;
             padding: 5px 10px;
@@ -65,7 +76,7 @@
 
     </style>
 </head>
-<body style="padding-top: 20px; background-color: #EBEDF0; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+<body style="padding-top: 20px; background-color: white;">
     <center>
 
         <div class="search-container">
@@ -158,6 +169,7 @@
         });
     }
 </script>
+
 
 
 </body>
